@@ -1,0 +1,26 @@
+{
+  "name": "part2",
+  "version": "1.0.0",
+  "description": "Playwright with Cucumber and TypeScript",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:dry": "cucumber-js --dry-run",
+    "build": "tsc",
+    "clean": "rm -rf dist reports"
+  },
+  "keywords": ["playwright", "cucumber", "typescript", "testing"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.40.0",
+    "@types/cucumber": "^7.0.0",
+    "@types/node": "^20.0.0",
+    "playwright": "^1.40.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

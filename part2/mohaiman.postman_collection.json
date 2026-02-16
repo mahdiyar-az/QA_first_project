@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "a6027aeb-8680-4332-9a6b-540115d71b5a",
+		"name": "mohaiman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45087281",
+		"_collection_link": "https://race55.postman.co/workspace/Race-Workspace~814abafd-ce04-4f05-8811-f1ba07a6d719/collection/45087281-a6027aeb-8680-4332-9a6b-540115d71b5a?action=share&source=collection_link&creator=45087281"
+	},
+	"item": [
+		{
+			"name": "https://automationexercise.com/api/productsList Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"console.log(pm.response.json().products.filter(p => p.brand === \"Polo\").map(p => p.name));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://automationexercise.com/api/searchProduct Copy",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search_product",
+							"value": "TSHIRTS",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
