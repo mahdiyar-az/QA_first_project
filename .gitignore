@@ -1,0 +1,9 @@
+./.idea
+part1/node_modules/
+part1/dist/
+part1/reports/
+part1/.env
+part1/*.log
+part1/.DS_Store
+part1/test-results/
+part1/playwright-report/
